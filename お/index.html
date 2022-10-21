@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>My test page</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <h1>日本大学文理学部情報科学科 Webプログラミングの演習課題</h1>
+  <img src="images/n-logresult.png" alt="My test image">
+  <h2>学籍番号：5419069  氏名：富岡航平</h2>
+
+  <ul>
+    <li>html要素</li>
+    <p>html要素はHTMLドキュメントのルートを表します。著者は、ルートhtml要素にlang属性を指定し、ドキュメントの言語を与えることをお勧めします。これにより、音声合成ツールを使用して使用する発音を決定したり、使用するルールを決定するための翻訳ツールなどを支援します。</p>
+    <div class="box">
+      <span class="box-title">ソースコード</span>
+      <pre><code class="html">
+        <c- cp="">&lt;!DOCTYPE html&gt;
+        </c-><c- p="">&lt;</c-><c- f="">html</c->&gt;</c->
+        <c- p="">&lt;</c-><c- f="">head</c-><c- p="">&gt;</c->
+        <c- p="">&lt;</c-><c- f="">title</c-><c- p="">&gt;</c->こんにゃく<c- p="">&lt;/</c-><c- f="">title</c-><c- p="">&gt;</c->
+        <c- p="">&lt;/</c-><c- f="">head</c-><c- p="">&gt;</c->
+        <c- p="">&lt;</c-><c- f="">body</c-><c- p="">&gt;</c->
+        <c- p="">&lt;</c-><c- f="">h1</c-><c- p="">&gt;</c->こんにゃく<c- p="">&lt;/</c-><c- f="">h1</c-><c- p="">&gt;</c->
+        <c- p="">&lt;</c-><c- f="">p</c-><c- p="">&gt;</c->私はこんにゃくマスターである<c- p="">&lt;/</c-><c- f="">p</c-><c- p="">&gt;</c->
+        <c- p="">&lt;/</c-><c- f="">body</c-><c- p="">&gt;</c->
+        <c- p="">&lt;/</c-><c- f="">html</c-><c- p="">&gt;</c-></code></pre>
+      </div>
+      <div class="box">
+        <span class="box-title">実行結果</span>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>こんにゃく</title>
+</head>
+<body>
+<h1>こんにゃく</h1>
+<p>私はこんにゃくマスターである</p>
+</body>
+</html>
+      </div>
+    <li>head要素</li>
+    <p>
+      head要素は、Documentのメタデータのコレクションを表します。著者 (author) の指定はいくつかの点で役立ちます。コンテンツに関する質問があって問い合わせしたい場合、誰がそのページを書いたのかに答えられます。 CMS (コンテンツ管理システム) によっては自動的にページの作者の情報を抽出して、このような目的で利用するための機能があります。
+    </p>
+    <div class="box">
+      <span class="box-title">ソースコード</span>
+      <pre><code class="html">
+        <c- p="">&lt;</c-><c- f="">head</c-><c- p="">&gt;</c->
+        ・title要素
+        ・meta要素
+          ...など
+        <c- p="">&lt;/</c-><c- f="">head</c-><c- p="">&gt;</c->
+      </div>
+      
+    <li>style要素</li>
+    <p>style要素を使用すると、作成者はドキュメントにCSSスタイルシートを埋め込むことができます。style要素は、スタイリング処理モデルへのいくつかの入力の1つです。この要素は、ユーザーのコンテンツを表すものではありません。</p>
+    <div class="box">
+      <span class="box-title">ソースコード</span>
+      <pre>
+        <code class="html"><c- cp="">&lt;!DOCTYPE html&gt;</c->
+          <c- p="">&lt;</c-><c- f="">head</c-><c- p="">&gt;</c->
+          <c- p="">&lt;</c-><c- f="">title</c-><c- p="">&gt;</c->My favorite book<c- p="">&lt;/</c-><c- f="">title</c-><c- p="">&gt;</c->
+          <c- p="">&lt;</c-><c- f="">style</c-><c- p="">&gt;</c->
+          <c- f="">body</c-> <c- p="">{</c-> <c- k="">color</c-><c- p="">:</c-> <c- kc="">black</c-><c- p="">;</c-> <c- k="">background</c-><c- p="">:</c-> <c- kc="">white</c-><c- p="">;</c-> <c- p="">}</c->
+          <c- f="">em</c-> <c- p="">{</c-> <c- k="">font-style</c-><c- p="">:</c-> <c- kc="">normal</c-><c- p="">;</c-> <c- k="">color</c-><c- p="">:</c-> <c- kc="">red</c-><c- p="">;</c-> <c- p="">}</c->
+          <c- p="">&lt;/</c-><c- f="">style</c-><c- p="">&gt;</c->
+          <c- p="">&lt;/</c-><c- f="">head</c-><c- p="">&gt;</c->
+          <c- p="">&lt;</c-><c- f="">body</c-><c- p="">&gt;</c->
+          <c- p="">&lt;</c-><c- f="">p</c-><c- p="">&gt;</c->私の好きな食べ物は 
+          <c- p="">&lt;</c-><c- f="">em</c-><c- p="">&gt;</c->こんにゃく<c- p="">&lt;/</c-><c- f="">em</c-><c- p="">&gt;</c-> 
+          です。最近は
+          <c- p="">&lt;</c-><c- f="">em</c-><c- p="">&gt;</c->肉じゃが<c- p="">&lt;/</c-><c- f="">em</c-><c- p="">&gt;</c-> 
+          に
+          <c- p="">&lt;</c-><c- f="">em</c-><c- p="">&gt;</c->こんにゃく<c- p="">&lt;/</c-><c- f="">em</c-><c- p="">&gt;</c->
+          を入れて食べました。
+          <c- p="">&lt;/</c-><c- f="">body</c-><c- p="">&gt;</c->
+          <c- p="">&lt;/</c-><c- f="">html</c-><c- p="">&gt;</c-></code>
+        </pre>
+        </div>
+        <div class="box">
+          <span class="box-title">ソースコード</span>
+          <!DOCTYPE html>
+<html lang="en-US">
+ <head>
+  <title>My favorite book</title>
+  <style>
+   body { color: black; background: white; }
+   em { font-style: normal; color: red; }
+  </style>
+ </head>
+ <body>
+  <p>私の好きな食べ物は <em>こんにゃく</em> です。最近は <em>肉じゃが</em> に
+  <em>こんにゃく</em>を入れて食べました。</p>
+ </body>
+</html>
+        </div>
+      </ul>
+      
+      <p>参考文献:「<a href="https://html.spec.whatwg.org/multipage/#toc-semantics">4 The elements of HTML</a>」</p>
+    </body>
+    
+</html>
